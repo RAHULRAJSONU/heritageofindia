@@ -1,0 +1,22 @@
+{
+  "name": "heritageofindia",
+  "version": "1.0.0",
+  "description": "A web gallery that contains information about heritages in India.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RAHULRAJSONU/heritageofindia.git"
+  },
+  "keywords": [
+    "heritage"
+  ],
+  "author": "Rahul Raj",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/RAHULRAJSONU/heritageofindia/issues"
+  },
+  "homepage": "https://github.com/RAHULRAJSONU/heritageofindia#readme"
+}
