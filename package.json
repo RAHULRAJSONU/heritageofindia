@@ -12,7 +12,13 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "postinstall:bak": "ngcc",
+    "postinstall": "ngcc",
+    "build:header-app:externals": "ng build --extra-webpack-config projects/header-app/webpack.externals.js --prod --project header-app --single-bundle",
+    "build:content-app:externals": "ng build --extra-webpack-config projects/content-app/webpack.externals.js --prod --project content-app --single-bundle",
+    "build:footer-app:externals": "ng build --extra-webpack-config projects/footer-app/webpack.externals.js --prod --project footer-app --single-bundle",
+    "build:sidebar-app:externals": "ng build --extra-webpack-config projects/sidebar-app/webpack.externals.js --prod --project sidebar-app --single-bundle"
   },
   "private": true,
   "dependencies": {
@@ -28,6 +34,9 @@
     "@angular/platform-browser-dynamic": "~10.1.2",
     "@angular/router": "~10.1.2",
     "@schematics/angular": "^10.1.2",
+    "@webcomponents/webcomponentsjs": "^2.4.4",
+    "document-register-element": "^1.7.2",
+    "ngx-build-plus": "^10.1.1",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.2"
